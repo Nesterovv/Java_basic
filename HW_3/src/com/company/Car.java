@@ -1,7 +1,6 @@
 package com.company;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Car {
     private String color;
@@ -9,9 +8,8 @@ public class Car {
     final int year;
     private Double wheel;
     final Double engineVolume;
-    private String options;
-    ArrayList<String> cars = new ArrayList<String>();
-    private int removeElement;
+   ArrayList<String> cars = new ArrayList<String>();
+
 
     public Car(String model, int year, Double engineVolume) {
         this.model = model;
@@ -39,9 +37,8 @@ public class Car {
         System.out.println(cars);
 
     }
-    public void removeOption (int removeElement){
-        int index = cars.size()-1;
-        cars.remove(index);
+    public void removeOption (String removeElement){
+        cars.remove(removeElement);
         System.out.println(cars);
 
     }

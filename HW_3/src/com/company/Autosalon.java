@@ -1,5 +1,6 @@
 package com.company;
 
-public class Autosalon extends ServiceCar{
+public class Autosalon extends CarFactory {
+
 
 }
